@@ -1,0 +1,9 @@
+sudo dmidecode -t 2
+    - this will display motherboard information
+
+sudo dmidecode --type 17
+    - this will show ram information
+
+sudo dmidecode -t processor
+    - this will show CPU information
+

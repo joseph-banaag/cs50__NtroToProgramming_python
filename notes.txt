@@ -1,0 +1,40 @@
+* make it a habit of creating a scope function when writing code
+* create the code the longest way and then update it to its shortest simplest form
+* python will get what is inside the most inner parenthesis going to the most outer
+*    # if n % 2 == 0:
+     #     return True
+     return True if n % 2 == 0 else False - shorter code than the one above it
+* if the code is expected to return True, eliminate extra code and write it as it is like:
+     return n % 2 == 0 - shortest code than the one above it
+* match statement is like if else
+    - the underscore in match statement is called "catch all"
+* break in loop function will terminate the execution of the loop
+* continue in loop function will still continue once the condition is relevant
+* return will stop the loop function if the loop function is inside the defined function just to get the final value that the defined function is expected to get
+* the underscore _ is the pythons placeholder instead of i. eg. for _ in range(): print(_)
+* the conventional entry point when starting a python program is to create a main function
+def main():
+    ***** some codes here *****
+
+if __name__ == "__main__":
+    main()
+    $$$ this can only be defined once. no multiple main functions.
+
+* FOR LOOP - will loop depending on the given condition
+* WHILE LOOP - will continue looping while the condition is true
+* len - length in python will determine the length of an object or number of an item.
+* to access the items on the list use indexing v[0]
+
+* there are two ways of creating a dict.
+    ex: using {}
+            occupants = {"name_1": "doks", "name_2": "seph", "name_3": "poy"}
+    ex: using the dict() function
+            occupants.dict(name_1: "doks", name_2: "seph", name_3: "poy")
+* to access the items on the dictionary use the key name v[keyname]
+* write dictionary in a database format vertical instead of one-liner
+
+
+******* will continue here...
+
+study different types of comprehensions in python:
+https://www.google.com/search?q=what+are+the+different+types+of+comprehension+in+python&oq=what+are+the+different+types+of+comprehension+in+python&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyDQgFEAAYhgMYgAQYigUyCggGEAAYogQYiQUyCggHEAAYgAQYogQyCggIEAAYgAQYogQyCggJEAAYgAQYogTSAQg4ODU3ajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8
