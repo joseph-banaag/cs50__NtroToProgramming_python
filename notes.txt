@@ -35,7 +35,8 @@ if __name__ == "__main__":
 * to access the items on the dictionary use the key name v[keyname]
 * write dictionary in a database format vertical instead of one-liner
 * I can create a folder and then touch file inside that folder by ~$ mkdir sample_folder. ~$ touch sample_folder/sample_file.txt
-
+* using relative import by adding __init__.py in each folder
+* iterable - meaning is that an object that can be looped over
 
 ******* will continue here...
 
