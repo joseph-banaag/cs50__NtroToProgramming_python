@@ -1,3 +1,5 @@
+$$$ LESSON STARTED ON SEPTEMBER 10, 2025.
+
 * make it a habit of creating a scope function when writing code
 * create the code the longest way and then update it to its shortest simplest form
 * python will get what is inside the most inner parenthesis going to the most outer
@@ -32,6 +34,7 @@ if __name__ == "__main__":
             occupants.dict(name_1: "doks", name_2: "seph", name_3: "poy")
 * to access the items on the dictionary use the key name v[keyname]
 * write dictionary in a database format vertical instead of one-liner
+* I can create a folder and then touch file inside that folder by ~$ mkdir sample_folder. ~$ touch sample_folder/sample_file.txt
 
 
 ******* will continue here...
