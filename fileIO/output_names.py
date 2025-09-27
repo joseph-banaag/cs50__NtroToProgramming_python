@@ -1,6 +1,29 @@
+import sys
+
 with open("collected_names.txt") as file:
     for name in sorted(file):
         print(f"hello, {name.strip()}")
+
+with open("collected_names.txt") as file_2:
+    print(file_2)
+    for person in file_2:
+        names = person.strip()
+        who = input("Who are you looking for? ")
+        print("names",names)
+    if who in names:
+        sys.exit(f"{who} is currently in the roster")
+    else:
+        print(f"{who} is not in the roster.")
+
+"""
+
+my_list = ["banana", "cherry", "apple"]
+search = input("What are you looking for? ")
+if search in my_list:
+    sys.exit(f"{search} is in the list.")
+else:
+    print(f"{search} is not in the list.")
+"""
 
 
 """
