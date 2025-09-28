@@ -1,9 +1,10 @@
 def main():
     with open("collected_names.csv") as file:
         for name in file:
-            row = name.strip().split(",")
-            # print(f"{row[0]} is in {row[1]}")
-            print(f"{row[0]} is in {row[1]}")
+             #   row = name.strip().split(",") # this is the usual way of assigning value to a variable
+            person, house = name.strip().split(",") # assigning two variables at the same time with the use of .split() function
+                # string.split(separator, maxsplit)
+            print(f"{person} is in {house}")
 
 
 if __name__ == "__main__":

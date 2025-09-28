@@ -1,0 +1,11 @@
+* create a list of names in a file of 100 person with full name.
+    - create csv for people [done]
+    - list
+    - for loop
+    - open()
+
+* assign all the names to a list in python.
+    - create a function that will get persons information
+
+* use list comprehension to find someone with 'a' on their firstname, with 'b' on their lastname.
+    - create a function that will sort all people with 'a' on their first name and 'b' on their lastname

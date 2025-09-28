@@ -37,8 +37,9 @@ if __name__ == "__main__":
 * I can create a folder and then touch file inside that folder by ~$ mkdir sample_folder. ~$ touch sample_folder/sample_file.txt
 * using relative import by adding __init__.py in each folder
 * iterable - meaning is that an object that can be looped over
+* CSV - comma, separated values
+* single line multiple variable assignment: a,b,c = 1,2,3. print(a) = 1, print(b) = 2, print(c) = 3.
 
-******* will continue here...
+ * aside from list and dictionary, tuples, strings, sets, ranges, generators, file object (file IO), view object from dictionary (dict.keys(), dict.values(), dict.items() are iterables that can be used for for loop 
 
-study different types of comprehensions in python:
-https://www.google.com/search?q=what+are+the+different+types+of+comprehension+in+python&oq=what+are+the+different+types+of+comprehension+in+python&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyDQgFEAAYhgMYgAQYigUyCggGEAAYogQYiQUyCggHEAAYgAQYogQyCggIEAAYgAQYogQyCggJEAAYgAQYogTSAQg4ODU3ajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8
+* sorted() is a built-in function that returns a new sorted list from the elements of any iterable, leaving the original iterable unchanged.
