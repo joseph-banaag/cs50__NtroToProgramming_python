@@ -1,6 +1,6 @@
 sentence = input("Please write a sentence.\n").split()
 
-lowercase_sentence = [word.lower() for word in sentence] # created a new list for lowercased strings
+lowercase_sentence = [word.lower() for word in sentence] # created a new list for lowercased strings ( pythonic way of writing for loop for a variable)
 
 cleaned_sentence = set(lowercase_sentence)
 
