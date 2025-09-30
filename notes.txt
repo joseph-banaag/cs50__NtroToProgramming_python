@@ -40,6 +40,60 @@ if __name__ == "__main__":
 * CSV - comma, separated values
 * single line multiple variable assignment: a,b,c = 1,2,3. print(a) = 1, print(b) = 2, print(c) = 3.
 
- * aside from list and dictionary, tuples, strings, sets, ranges, generators, file object (file IO), view object from dictionary (dict.keys(), dict.values(), dict.items() are iterables that can be used for for loop 
-
+ * aside from list and dictionary, tuples, strings, sets, ranges, generators, file object (file IO), view object from dictionary (dict.keys(), dict.values(), dict.items() are iterables that can be used for for loop
 * sorted() is a built-in function that returns a new sorted list from the elements of any iterable, leaving the original iterable unchanged.
+* if the quotes will be used twice in one line, use single quote in one of the quote partner.eg. f"this is a sample f-string: {'name'}"
+* instead of defining a function for simple usage, create an anonymous function 'lambda function' instead. check usage of lambda
+* accessing the values from a dictionary: https://www.w3schools.com/python/python_dictionaries_access.asp
+
+https://www.google.com/search?q=what+is+**+in+python&oq=what+is+**+in+python&gs_lcrp=EgZjaHJvbWUyDwgAEEUYORiRAhiABBiKBTIHCAEQABiABDIICAIQABgWGB4yCAgDEAAYFhgeMggIBBAAGBYYHjIICAUQABgWGB4yCAgGEAAYFhgeMggIBxAAGBYYHjIICAgQABgWGB4yCAgJEAAYFhge0gEINjk1MWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#vhid=GYmZuQIwb3XsdM&vssid=_o0fbaLCPJ5vm2roPg-zSmQc_45
+
+    In Python, the double asterisk ** has two primary uses: Exponentiation Operator.
+It serves as the exponentiation operator, calculating the power of a number. The number on the left of ** is the base, and the number on the right is the exponent.
+
+    result = 2 ** 3  # This calculates 2 raised to the power of 3, which is 8
+    print(result)
+
+    Handling Keyword Arguments in Function Definitions and Calls (`: kwargs`):**
+When used in a function definition as **kwargs (or any other name prefixed with **), it allows the function to accept an arbitrary number of keyword arguments. These arguments are collected into a dictionary within the function, where the keys are the argument names and the values are the argument values.
+
+    def greet_person(**details):
+        print(f"Hello, {details['name']}!")
+        if 'age' in details:
+            print(f"You are {details['age']} years old.")
+
+    greet_person(name="Alice", age=30, city="New York")
+
+    It can also be used to unpack a dictionary into keyword arguments when calling a function:
+
+        def display_info(name, age):
+        print(f"Name: {name}, Age: {age}")
+
+    person_data = {'name': 'Bob', 'age': 25}
+    display_info(**person_data)
+
+LAMBDA FUNCTION
+
+In Python, lambda is a keyword used to create small, anonymous functions. These are also known as lambda functions or lambda expressions. Unlike regular functions defined with the def keyword, lambda functions do not require a name and are typically used for single, simple operations where a full function definition would be unnecessarily verbose.
+Here's what lambda does:
+Creates an Anonymous Function: It allows you to define a function without explicitly giving it a name. This is useful when you need a function for a short period or as an argument to another function.
+Single Expression: Lambda functions are restricted to a single expression. This expression is automatically evaluated and returned as the result of the function. There is no return statement needed.
+Syntax: The basic syntax is lambda arguments : expression.
+lambda: The keyword indicating the creation of a lambda function.
+arguments: Zero or more arguments that the function takes, separated by commas.
+expression: The single expression that the function evaluates and returns.
+Example:
+
+# A lambda function to double a number
+doubler = lambda x: x * 2
+print(doubler(5)) # Output: 10
+
+# Using lambda with higher-order functions like map()
+numbers = [1, 2, 3, 4]
+squared_numbers = list(map(lambda x: x**2, numbers))
+print(squared_numbers) # Output: [1, 4, 9, 16]
+
+Key Uses:
+Higher-order functions: Often used with functions like map(), filter(), sorted(), and reduce() that take other functions as arguments.
+Simple callbacks: When a simple, one-line function is needed as a callback.
+Short-lived functions: For operations that are only needed in a specific context and don't warrant a named function definition.

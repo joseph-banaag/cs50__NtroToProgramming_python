@@ -1,25 +1,23 @@
 def main():
+
+    students = []
     with open("collected_names.csv") as file:
         for name in file:
-             #   row = name.strip().split(",") # this is the usual way of assigning value to a variable
-            person, house = name.strip().split(",") # assigning two variables at the same time with the use of .split() function
-                # string.split(separator, maxsplit)
-            print(f"{person} is in {house}")
+            person, house = name.strip().split(",")
+
+            student = {"name": person, "house": house} # this is to create a new dict from the source
+            students.append(student)
+
+    for student in sorted(students, key=lambda people: people['name'], reverse=True):
+        print(f"{student['name']} is in {student['house']}")
+
+"""
+    note: the iterable source file was converted to list first before sorting by key
+    sorted() function syntax:
+        sorted(iterable, key=key, reverse=reverse)
+    
+"""
 
 
 if __name__ == "__main__":
     main()
-
-"""
-$$$ ASSIGNMENT:
-
-    create a program that will find someone from the file and then throw a message if the person is not included.
-"""
-
-
-"""
-with open("input_names.py") as file:
-    for name in file:
-        print(name)
-        
-"""
