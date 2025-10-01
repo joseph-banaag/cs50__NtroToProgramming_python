@@ -1,6 +1,6 @@
 
 for _ in range(8):
-    with open("collected_names.csv", "a+") as file: # the file in as file is the return object just like the _ in for loop.
+    with open("collected_names.csv", "w") as file: # the file in as file is the return object just like the _ in for loop.
             # "a" and "+" is for appending and updating the file respectively
         file.write(input("What is your name? ").title() + "\n")
 

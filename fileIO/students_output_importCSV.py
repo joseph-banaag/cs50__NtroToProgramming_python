@@ -1,16 +1,15 @@
 import csv
 
 def main():
-
     students = []
-    with open("collected_names.csv") as file:
-        reader = csv.reader(file)
-        for name, home in reader: # this is the process of unpacking the file and assigning to a usable variables
-            students.append({'name': name, 'home': home})
 
-    for student in sorted(students, key=lambda people: people['name'], reverse=True):
-        print(f"{student['name']} is in {student['home']}")
+    with open("../CHALLENGES/people_extended.csv", "r", newline="") as csvFile:
+        reader = csv.DictReader(csvFile)
+        for row in reader:
+            students.append({'first_name': row['First Name'], 'last_name': row['Last Name'], 'age':row['Age'], 'email' : row['Email'] , 'address': row['Address']})
 
+    for student in sorted(students, key=lambda s: s["first_name"] ):
+        print(f"{student["first_name"]} is from {student["address"]}")
 
 if __name__ == "__main__":
     main()
