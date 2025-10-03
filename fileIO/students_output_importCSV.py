@@ -3,7 +3,7 @@ import csv
 def main():
     students = []
 
-    with open("../CHALLENGES/people_extended.csv", "r", newline="") as csvFile:
+    with open("../CHALLENGES/people_extended.csv", "r", newline="") as csvFile: # the file has the header that will be the reference for the keys.
         reader = csv.DictReader(csvFile)
         for row in reader:
             students.append({'first_name': row['First Name'], 'last_name': row['Last Name'], 'age':row['Age'], 'email' : row['Email'] , 'address': row['Address']})
