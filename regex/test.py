@@ -1,18 +1,12 @@
 import re
 
-text = "My phone number is 123-456-7890. Call me!"
+pattern =r"^[a-zA-Z0-9_]+@[a-zA-Z0-9_]+/.eu$"
+    #r"^[^@]+@[^@]+$" # this will match any characters from the left and right of an @ sign. There should be only one @ sign in the string.
 
-# Find the phone number
-match = re.search(r"\d{3}-\d{3}-\d{4}", text)
-if match:
-    print(f"Phone number found from the text: {match.group()}")
+string_test = input("What is the string?\n")
+
+if re.search(pattern, string_test):
+    print(f"the string: {string_test} is a match and valid entry! ")
 else:
-    print(f"Phone number found from the text: {match}")
+    print("ERROR: Invalid entry.")
 
-# Find all words starting with 'p'
-words_starting_with_p = re.findall(r"\bp\w+", text, re.IGNORECASE)
-print(f"Words starting with 'p': {words_starting_with_p}")
-
-# Replace spaces with underscores
-new_text = re.sub(r"\s", "_", text)
-print(f"Text with underscores: {new_text}")
