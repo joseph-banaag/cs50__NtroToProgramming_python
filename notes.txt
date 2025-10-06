@@ -97,3 +97,28 @@ Key Uses:
 Higher-order functions: Often used with functions like map(), filter(), sorted(), and reduce() that take other functions as arguments.
 Simple callbacks: When a simple, one-line function is needed as a callback.
 Short-lived functions: For operations that are only needed in a specific context and don't warrant a named function definition.
+
+* """
+NOTE:
+   #  when using special character to match for the regex use \ to tell the program that the next the escape is the literal character that you wanted to match the expression.
+   #     - e.g. \.edu$ will be interpreted as the program should check for .edu match
+   #     - e.g. \$, \%, \@ etc... this will be match for: $, %, @ etc...
+
+   # to split email from the email name and domain
+
+username, domain = email.split("@")
+print(f"username: {username}\ndomain: {domain}")
+
+if username and domain.endswith(".edu"):
+    print("the email is valid")
+else:
+    print("invalid email")
+
+
+# other way of validating the email address
+if username and "." in domain:
+    print("the email is valid")
+else:
+    print("invalid email")
+"""
+
