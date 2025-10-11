@@ -14,7 +14,7 @@ $ : Matches the end of the string.
 \w : Matches any word character (alphanumeric + underscore).
 \b : Matches a word boundary.
 
-username@subdomain.topdomain
+username@subdomain.topdomain.
 Great question, partner 💡 — regex engines (like the one in Python’s `re` module) don’t just scan left-to-right blindly. They use something called **backtracking with a left-to-right matching strategy**. Let me break it down for you in simple terms:
 
 ---
