@@ -2,8 +2,10 @@ import re
 
 url = input("URL: ").strip()
 
-if user_name4 := re.search(r"^(https?://)?(www\.)?twitter\.com/(.+)$", url, re.IGNORECASE): # this conditional is using the walrus operator
-    print(f"Username: {user_name4.group(3)}")
+if user_name4 := re.search(r"^(?:https?://)?(?:www\.)?twitter\.com/([a-z0-9_]+?)$", url, re.IGNORECASE):
+            # this conditional is using the walrus operator
+            # the (?:....) will make the groupings excluded from the selection
+    print(f"Username: {user_name4.group(1)}")
 
 
 

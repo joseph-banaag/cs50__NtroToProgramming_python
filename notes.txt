@@ -121,4 +121,5 @@ if username and "." in domain:
 else:
     print("invalid email")
 """
+**** $$$ WHEN CHANGING FEATURES. make sure to add feature small step-by-step,or make small changes to make sure the feature will work as expected.
 
